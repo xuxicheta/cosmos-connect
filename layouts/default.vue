@@ -4,24 +4,22 @@
     navigation-bar
     div.content
       transition(name="fade" mode="out-in")
-        router-view
+        nuxt
     div.footer
 </template>
-
 <script>
-import NavigationBar from '@/components/NavigationBar';
-import TheHeader from '@/components/TheHeader';
+import NavigationBar from '../components/NavigationBar.vue';
+import TheHeader from '../components/TheHeader.vue';
 export default {
-  name: 'App',
   components: {
     NavigationBar,
     TheHeader,
-  }
+  },
 }
 </script>
 
 <style lang="less">
-@import './less/vars.less';
+@import '~assets/less/vars.less';
 html, body {
   margin: 0;
   padding: 0;
@@ -40,7 +38,7 @@ html, body {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   color: #2c3e50;
 
-  background-image: url('./assets/background.jpg');
+  background-image: url('~static/img/background.jpg');
   background-repeat: no-repeat;
   background-position: top;
   background-attachment: fixed;
@@ -62,20 +60,6 @@ html, body {
   li {
     margin-bottom: 0.3rem;
   }
-
-  &::-webkit-scrollbar {
-      width: 12px;
-  }
-
-  &::-webkit-scrollbar-track {
-      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-      border-radius: 10px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-      border-radius: 10px;
-      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
-  }
 }
 
 .footer {
@@ -85,9 +69,9 @@ html, body {
 }
 
 .fade-enter-active, .fade-leave-active {
-  transition: opacity .2s;
+  transition: opacity 1.2s;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+.fade-enter, .fade-leave-to  {
   opacity: 0;
 }
 </style>

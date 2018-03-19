@@ -41,3 +41,12 @@
       li.
         создание средств обеспечения эксплуатации радиотехнических комплексов.
 </template>
+<script>
+export default {
+	head() {
+		return {
+			title: 'CosmosConnect Задачи',
+		};
+	},
+};
+</script>

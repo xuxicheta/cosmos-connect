@@ -8,3 +8,12 @@
   <p>e-mail: <a href="mailto:mail@cosmos-connect.ru">mail@cosmos-connect.ru</a></p>
 </div>
 </template>
+<script>
+export default {
+	head() {
+		return {
+			title: 'CosmosConnect Контакты',
+		};
+	},
+};
+</script>

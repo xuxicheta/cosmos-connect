@@ -5,10 +5,9 @@
   </div>
 </template>
 <style lang="less">
-@import '../less/vars.less';
+@import '~assets/less/vars.less';
 .header {
   .max-width;
-  // width: 100%;
   height: 4rem;
   margin: auto;
   position: relative;

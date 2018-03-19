@@ -30,3 +30,12 @@
     </ol>
   </div>
 </template>
+<script>
+export default {
+	head() {
+		return {
+			title: 'CosmosConnect Направление деятельности',
+		};
+	},
+};
+</script>

@@ -2,12 +2,12 @@
   <ul class="navbar">
     <li><router-link to="/tasks">Задачи предприятия</router-link></li>
     <li><router-link to="/directs">Направление деятельности</router-link></li>
-    <li><router-link to="/contacts">Контакты</router-link></li>
+    <li><router-link to="/">Контакты</router-link></li>
     <li><router-link to="/completes">Выполненные работы</router-link></li>
   </ul>
 </template>
 <style lang="less">
-@import '../less/vars.less';
+@import '~assets/less/vars.less';
 .navbar {
   .max-width;
   flex: none;

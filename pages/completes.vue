@@ -78,3 +78,12 @@
     </ul> -->
   </div>
 </template>
+<script>
+export default {
+	head() {
+		return {
+			title: 'CosmosConnect Перечень выполненных работ',
+		};
+	},
+};
+</script>
